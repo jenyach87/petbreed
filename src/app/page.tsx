@@ -1,4 +1,4 @@
-import Main from "@/components/RenderTable";
+import Main from "@/components/RenderPage";
 import { getRandomCatImages } from "@/helpers/catAPI";
 import { getRandomDogData } from "@/helpers/dogAPI";
 
