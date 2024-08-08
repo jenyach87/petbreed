@@ -38,8 +38,8 @@ const Main = (props: IMainProps) => {
           filteredeDogData.map((el: ICard) => (
             <li key={el.id} className="bg-white rounded-lg shadow-md overflow-hidden">
               <Link href={`/cardpage/${el.id}?type=dog`}>
-                <div className="relative w-full h-64">
-                  <img src={el.url} alt="Dog" className="w-full object-cover h-full rounded-t-lg" />
+                <div className="flex justify-center items-center w-full h-72">
+                  <img src={el.url} alt="Dog" className="object-fit w-full h-full rounded-t-lg" />
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-bold">{el.breeds[0].name}</h3>
@@ -58,8 +58,8 @@ const Main = (props: IMainProps) => {
           filteredCatData.map((el: ICatCard) => (
             <li key={el.id} className="bg-white rounded-lg shadow-md overflow-hidden">
               <Link href={`/cardpage/${el.id}?type=cat`}>
-                <div className="relative w-full h-64">
-                  <img src={el.url} alt="Cat" className="w-full object-cover h-full rounded-t-lg" />
+                <div className="relative w-full h-72">
+                  <img src={el.url} alt="Cat" className="object-cover w-full h-full rounded-t-lg" />
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-bold">{el.breeds[0].name}</h3>
