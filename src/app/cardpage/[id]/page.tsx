@@ -7,7 +7,6 @@ import { API } from '@/helpers/api';
 import Link from 'next/link';
 
 const fetchBreedData = async (id: string, type: string) => {
-  console.log(API.getCard.dog)
   const response = await fetch(
     type === 'dog'
       ? `${API.getCard.dog}/${id}`
